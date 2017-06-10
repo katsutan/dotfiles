@@ -18,8 +18,8 @@ setopt auto_cd
 # cd後、自動でpushdする
 setopt auto_pushd
 
-# pushd重複削除
-setopt auto_ignore_pushd
+# pushd重複削除 nasa
+# setopt auto_ignore_pushd
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -121,3 +121,8 @@ fi
 # こうすると、 Ctrl-W でカーソル前の1単語を削除したとき、 / までで削除が止まる
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
+export PATH="/home/aki-home/.linuxbrew/bin:$PATH"
+export XDG_DATA_DIRS="/home/aki-home/.linuxbrew/share:$XDG_DATA_DIRS"
+export PYENV_ROOT="$HOME/.pyenv"
+export PASH="$PYENV_ROOT/bin:$PASH"
+eval "$(pyenv init -)"

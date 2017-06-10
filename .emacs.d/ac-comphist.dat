@@ -1,236 +1,282 @@
-((("lambda" .
-   [0 0 0 0 1 0])
-  ("if" .
-   [2 0])
-  ("set-face-background" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("region" .
-   [1 0 0 0 0 1])
-  ("re" .
-   [2 0])
-  ("tab-width" .
-   [0 0 0 0 0 0 0 0 1])
-  ("setq-default" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("global-linum-mode" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("frame-title-format" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("display-battery-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("display-time-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("display-time-day-and-date" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("size-indication-mode" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("file" .
-   [1 0 0 0])
-  ("fi" .
-   [1 0])
-  ("column-number-mode" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("number" .
-   [1 0 0 0 0 0])
-  ("prefer-coding-system" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("set-language-environment" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("other-window" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("global-" .
-   [0 0 0 0 0 0 1])
-  ("toggle-truncate-lines" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("global-set-key" .
-   [0 0 0 1 0 0 0 0 0 1 0 0 0 0])
-  ("newline-and-indent" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("kbd" .
-   [3 0 0])
-  ("global-map" .
-   [0 0 0 0 0 0 0 0 0 1])
-  ("define-key" .
-   [0 0 0 0 0 0 0 0 0 1])
-  ("exec-path" .
-   [0 0 0 0 0 0 1 0 0])
-  ("python-mode" .
-   [0 0 0 0 0 0 2 0 0 0 0])
-  ("mo" .
-   [1 0])
-  ("co" .
-   [3 0])
-  ("add-to-load-path" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1])
-  ("normal-top-level-add-subdirs-to-load-path" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("normal-top-level-add-to-load-path" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("fboundp" .
-   [0 0 0 0 0 0 1])
-  ("default" .
-   [0 0 0 0 0 1 0])
-  ("add-to-list" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("concat" .
-   [0 0 0 0 0 1])
-  ("expand-file-name" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("default-directory" .
-   [0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
-  ("paths" .
-   [2 0 0 0 0])
-  ("path" .
-   [2 0 0 0])
-  ("dolist" .
-   [1 0 0 0 0 0])
-  ("let" .
-   [2 0 0])
-  ("load-path" .
-   [1 0 0 0 0 0 0 0 1])
-  ("load" .
-   [2 0 0 0])
-  ("user-emacs-directory" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("defvar" .
-   [0 0 0 0 0 1])
-  ("defun" .
-   [3 0 0 0 0])
-  ("emacs-major-version" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("when" .
-   [3 0 0 0])
-  ("auto_pushd" .
+((("color-theme-dark-erc" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("color-theme-dark-font-lock" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("setq-local" .
    [0 0 0 0 0 1 0 0 0 0])
-  ("sharehistory" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("histignorealldups" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("x-select-enable-clipboard" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setq" .
-   [8 0 0 2])
-  ("window-system" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("cond" .
-   [1 0 0 0])
-  ("alias" .
-   [0 0 0 0 7])
-  ("setopt" .
-   [3 0 0 0 5 0])
-  ("colors" .
-   [0 0 0 0 1 0])
-  ("-Uz" .
-   [1 0 0])
-  ("autoload" .
-   [1 0 0 0 0 0 0 0])
-  ("line" .
-   [1 0 0 0])
-  ("sentence" .
-   [0 0 0 1 0 0 0 0])
-  ("explanatory_text" .
-   [0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("False" .
-   [0 0 3 3 0])
-  ("continue" .
-   [0 0 0 1 0 0 0 0])
-  ("True" .
-   [0 0 5 0])
-  ("flag" .
-   [5 0 0 1])
-  ("export" .
-   [0 0 0 1 0 1])
-  ("func" .
-   [0 0 0 1])
-  ("grep" .
-   [1 0 0 0])
-  ("require" .
-   [0 0 0 0 0 0 2])
-  ("color-theme" .
-   [0 0 0 0 0 0 0 1 0 0 1])
-  ("nil" .
-   [3 0 0])
-  ("read" .
-   [1 0 0 0])
-  ("conf" .
-   [1 0 0 0])
-  ("config-changed-event" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("color-theme-tty-dark" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0])
-  ("color-theme-snow" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0])
-  ("color-theme-lethe" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("color-theme-taylor" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0])
-  ("color-theme-midnight" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("color-theme-dark-info" .
+  ("flymake" .
+   [0 0 0 0 0 0 1])
+  ("flymake-init-create-temp-inplace" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("synonym" .
+   [0 0 0 0 1 0 0])
+  ("elisp-mode-hooks" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("emacs-lisp-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("emacs-lisp-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("add-hook" .
+   [0 0 0 0 0 0 1 0])
+  ("eldoc" .
+   [1 0 0 0 2])
+  ("auto-save-file-name-transforms" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("temporary-file-directory" .
+   [0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("backup-directory-alist" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("show-paren-match-face" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("color-theme-dark-gnus" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0])
-  ("color-theme-pok-wog" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("color-theme-word-perfect" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("color-theme-wheat" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("color-theme-whateveryouwant" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("color-theme-mistyday" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("color-theme-matrix" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("color-theme-aalto-dark" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("color-theme-salmon-diff" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("color-theme-dark-laptop" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("defface" .
-   [1 0 0 0 1 0 0])
-  ("color" .
-   [1 0 0 0 1])
-  (":background" .
-   [0 0 0 0 0 0 1 0 0 0 1])
-  ("class" .
+  ("set-face-underline-p" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("show-paren-match" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("set-face-" .
+   [0 0 0 0 0 0 0 0 1])
+  ("show-paren-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1])
+  ("show-paren-m" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("global-hl-line-mode" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("my-hl-line-face" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hl-line-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  (":bold" .
    [1 0 0 0 0])
   ("backgroun" .
    [0 0 0 0 0 0 0 0 1])
-  (":bold" .
+  ("class" .
    [1 0 0 0 0])
-  ("hl-line-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0])
-  ("my-hl-line-face" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("global-hl-line-mode" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("show-paren-m" .
-   [0 0 0 0 0 0 0 0 0 0 0 1])
-  ("show-paren-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 1])
-  ("set-face-" .
-   [0 0 0 0 0 0 0 0 1])
-  ("show-paren-match" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("set-face-underline-p" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("show-paren-match-face" .
+  (":background" .
+   [0 0 0 0 0 0 1 0 0 0 1])
+  ("color" .
+   [1 0 0 0 1])
+  ("defface" .
+   [1 0 0 0 1 0 0])
+  ("color-theme-dark-laptop" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0])
+  ("color-theme-salmon-diff" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("color-theme-aalto-dark" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("color-theme-matrix" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0])
+  ("color-theme-mistyday" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("color-theme-whateveryouwant" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-wheat" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("color-theme-word-perfect" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("color-theme-pok-wog" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme-dark-gnus" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2 2 0 0 0 0 0 0 0])
+  ("color-theme-dark-info" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("backup-directory-alist" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("temporary-file-directory" .
-   [0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("auto-save-file-name-transforms" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("eldoc" .
-   [1 0 0 0 2])
-  ("add-hook" .
-   [0 0 0 0 0 0 1 0])
-  ("emacs-lisp-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("emacs-lisp-mode-hook" .
+  ("color-theme-midnight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("color-theme-taylor" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 3 1 0 0 0 0])
+  ("color-theme-lethe" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0])
+  ("color-theme-snow" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0])
+  ("color-theme-tty-dark" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 3 1 1 0 0 0 0 0])
+  ("config-changed-event" .
+   [0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("conf" .
+   [2 0 0 0])
+  ("read" .
+   [1 0 0 0])
+  ("nil" .
+   [5 0 0])
+  ("color-theme" .
+   [0 0 0 0 0 0 0 1 0 0 1])
+  ("require" .
+   [0 0 0 0 0 0 4])
+  ("grep" .
+   [1 0 0 0])
+  ("func" .
+   [0 0 0 1])
+  ("export" .
+   [0 0 0 1 0 1])
+  ("flag" .
+   [5 0 0 1])
+  ("True" .
+   [0 0 5 0])
+  ("continue" .
+   [0 0 0 1 0 0 0 0])
+  ("False" .
+   [0 0 3 3 0])
+  ("explanatory_text" .
+   [0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("sentence" .
+   [0 0 0 1 0 0 0 0])
+  ("line" .
+   [1 0 0 0])
+  ("autoload" .
+   [1 0 0 0 0 0 0 0])
+  ("-Uz" .
+   [1 0 0])
+  ("colors" .
+   [0 0 0 0 1 0])
+  ("setopt" .
+   [3 0 0 0 5 0])
+  ("alias" .
+   [0 0 0 0 7])
+  ("cond" .
+   [1 0 0 0])
+  ("window-system" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("setq" .
+   [8 0 0 3])
+  ("x-select-enable-clipboard" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("histignorealldups" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("sharehistory" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("auto_pushd" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("when" .
+   [4 0 0 0])
+  ("emacs-major-version" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [3 0 0 0 0])
+  ("defvar" .
+   [0 0 0 0 0 1])
+  ("user-emacs-directory" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("load" .
+   [2 0 0 0])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 1])
+  ("let" .
+   [2 0 0])
+  ("dolist" .
+   [1 0 0 0 0 0])
+  ("path" .
+   [2 0 0 0])
+  ("paths" .
+   [2 0 0 0 0])
+  ("default-directory" .
+   [0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("expand-file-name" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("concat" .
+   [0 0 0 0 0 1])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("default" .
+   [0 0 0 0 0 1 0])
+  ("fboundp" .
+   [0 0 0 0 0 0 1])
+  ("normal-top-level-add-to-load-path" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("normal-top-level-add-subdirs-to-load-path" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-load-path" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1])
+  ("co" .
+   [4 0])
+  ("mo" .
+   [1 0])
+  ("python-mode" .
+   [0 0 0 0 0 0 2 0 0 0 0])
+  ("exec-path" .
+   [0 0 0 0 0 0 1 0 0])
+  ("define-key" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("global-map" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("kbd" .
+   [3 0 0])
+  ("newline-and-indent" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("global-set-key" .
+   [0 0 0 1 0 0 0 0 0 1 0 0 0 0])
+  ("toggle-truncate-lines" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("global-" .
+   [0 0 0 0 0 0 1])
+  ("other-window" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("set-language-environment" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("prefer-coding-system" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("number" .
+   [1 0 0 0 0 0])
+  ("column-number-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fi" .
+   [1 0])
+  ("file" .
+   [1 0 0 0])
+  ("size-indication-mode" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("display-time-day-and-date" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("display-time-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("display-battery-mode" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("elisp-mode-hooks" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])))
+  ("frame-title-format" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("global-linum-mode" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("setq-default" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("tab-width" .
+   [0 0 0 0 0 0 0 0 1])
+  ("re" .
+   [2 0])
+  ("region" .
+   [1 0 0 0 0 1])
+  ("set-face-background" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("if" .
+   [2 0])
+  ("lambda" .
+   [0 0 0 0 1 0])
+  ("word" .
+   [3 0 0 0])
+  ("argv" .
+   [0 0 0 1])
+  ("mu" .
+   [1 0])
+  ("mult" .
+   [1 0 0 0])
+  ("multi-term" .
+   [2 0 0 0 0 0 0 0 0 1])
+  ("sh" .
+   [1 0])
+  ("global-whitespace-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("scroll-conservatively" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-black-on-gray" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-oswald" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme-vim-colors" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("color-theme-xp" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("color-theme-xemacs" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme-marine" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme-gray1" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("color-theme-faces" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("color-theme-gray30" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])))

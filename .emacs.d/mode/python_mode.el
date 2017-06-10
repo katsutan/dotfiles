@@ -7,21 +7,20 @@
 
 (add-hook 'python-mode-hook
 	  (lambda ()
- 	    (define-key python-mode-map (kbd "\C-m") 'newline-and-indent)
-            (define-key python-mode-map (kbd "RET") 'newline-and-indent)))
+ 	    (define-key python-mode-map (kbd "\C-h") 'newline-and-indent)
+		(define-key python-mode-map (kbd "RET") 'newline-and-indent)
+		))
 
 (yas-global-mode t)
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
-(require 'auto-complete-config)
-(ac-config-default)
-
 (require 'tramp-cmds)
 (when (load "flymake" t)
   (defun flymake-pyflakes-init ()
-					; Make sure it's not a remote buffer or flymake wouid not work
+   	; Make sure it's not a remote buffer or flymake wouid not work
     (when (not (subsetp (list (current-buffer)) (tramp-list-remote-buffers)))
-      (let* ((temp-file (flymake-init-create-temp-inplace))
+      (let* ((temp-file (flymake-init-create-temp-buffer-copy
+			 'flymake-create-temp-inplace))
 	     (local-file (file-relative-name
 			  temp-file
 			  (file-name-directory buffer-file-name))))
@@ -32,6 +31,10 @@
 (add-hook 'python-mode-hook
 	  (lambda ()
 	    (flymake-mode t)))
+
+
+(require 'auto-complete-config)
+(ac-config-default)
 
 (cond (window-system
        (setq x-select-enable-clipboard t)
@@ -49,3 +52,6 @@
  ;; If there is more than one, they won't work right.
  '(font-lock-builtin-face ((t (:foreground "magenta"))))
  '(font-lock-string-face ((t (:foreground "brightyellow")))))
+
+
+
