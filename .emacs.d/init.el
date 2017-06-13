@@ -26,6 +26,8 @@
 (setq auto-save-file-name-transforms
 	  `((".*" ,temporary-file-directory t)))
 
+
+		    
 ;;
 ;; COLOR
 ;;
@@ -37,17 +39,39 @@
   ;; theme read config
   (color-theme-initialize)
   ;; theme chage
-  (color-theme-dark-gnus))
+  (color-theme-charcoal-black))
 ;;現在行の色
 (defface my-hl-line-face
   `((((class color) (background dark))
-     (:background "brightBlack" t))                ;;紺色
+     (:background "#383838" t))                ;;紺色
 	(((class color) (background light))
      (:background "LightGoldenrodYellow" t))    ;;緑色
     (t (:bold t)))
   "hl-line's my face")
 (setq hl-line-face 'my-hl-line-face)
 (global-hl-line-mode t)
+
+;;行番号を常に表示
+(global-linum-mode t)
+
+(defvar my-linum-min-width 4)
+(setq linum-format
+	  (lambda (line)
+		(let ((fmt (format
+			    "%%%dd|"
+			    (max
+			     my-linum-min-width
+			     (length (number-to-string 
+				      (count-lines (point-min) (point-max))))))))
+		  (propertize (format fmt line) 'face 'linum))))
+(set-face-attribute 'linum nil
+		    :foreground "white"
+		    :background "#303030"
+		    :height 0.9)
+
+
+
+
 ;; 対応する括弧のハイライト
 ;; 強調表示
 (setq show-paren-delay 0)
@@ -72,6 +96,7 @@
 (add-hook 'emacs-lisp-mode-hook 'elisp-mode-hooks)
 
 
+
 ;; column number display
 (column-number-mode t)
 ;; file size display
@@ -87,8 +112,6 @@
 ;;titleber fullpath
 (setq frame-title-format "%f")
 
-;;行番号を常に表示
-(global-linum-mode t)
 
 ;; Space, Tab display
 ;;(global-whitespace-mode t)
@@ -139,6 +162,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "brightwhite" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "default"))))
- '(font-lock-builtin-face ((t (:foreground "brightblue"))))
- '(font-lock-string-face ((t (:foreground "brightyellow")))))
+ '(default ((t (:inherit nil :stipple nil :background "Grey15" :foreground "brightwhite" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "default"))))
+ '(font-lock-builtin-face ((t (:foreground "color-50"))))
+ '(font-lock-comment-face ((t (:foreground "brightgreen"))))
+ '(font-lock-keyword-face ((t (:foreground "color-45" :weight bold))))
+ '(font-lock-string-face ((t (:foreground "color-220")))))

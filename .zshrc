@@ -1,6 +1,7 @@
 # Set up the prompt
 # 環境変数
 export LANG=ja_JP.UTF-8
+fpath=(~/projects/dotfiles/.zsh-completions $fpath)
 
 autoload -Uz promptinit
 promptinit
@@ -78,6 +79,10 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+
+zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin /usr/local/git/bin
+
 
 
 #alias
