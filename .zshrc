@@ -106,6 +106,13 @@ alias -g G='| grep'
 #emacs
 alias em='emacs -nw'
 
+#MeCab
+alias mecab-ipadic='mecab -d /var/lib/mecab/dic/ipadic'
+alias mecab-unidic='mecab -d /var/lib/mecab/dic/unidic'
+
+#ssh
+alias ssh_nlp='ssh -oProxyCommand="ssh -W %h:%p nlp"'
+alias sshfs_nlp='sshfs -oProxyCommand="ssh -W %h:%p nlp"'
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
@@ -126,8 +133,14 @@ fi
 # こうすると、 Ctrl-W でカーソル前の1単語を削除したとき、 / までで削除が止まる
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
-export PATH="/home/aki-home/.linuxbrew/bin:$PATH"
-export XDG_DATA_DIRS="/home/aki-home/.linuxbrew/share:$XDG_DATA_DIRS"
+export PATH="/usr/local/sh:/path/to/mteval/build/bin:$PATH"
+# export XDG_DATA_DIRS="/home/aki-home/.linuxbrew/share:$XDG_DATA_DIRS"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PASH="$PYENV_ROOT/bin:$PASH"
 eval "$(pyenv init -)"
+
+#export HTTP_PROXY='http://proxy.nagaokaut.ac.jp:8080'
+#export HTTPS_PROXY='http://proxy.nagaokaut.ac.jp:8080'
+#export FTP_PROXY='http://proxy.nagaokaut.ac.jp:8080'
+#export NO_PROXY='localhost,.nagaokaut.ac.jp'

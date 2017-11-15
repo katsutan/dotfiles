@@ -1,1 +1,0 @@
-/home/aki-home/projects/dotfiles/.emacs.d

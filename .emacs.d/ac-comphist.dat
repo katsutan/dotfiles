@@ -1,4 +1,6 @@
-((("color-theme-charcoal-black" .
+((("script-representative-chars" .
+   [0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-charcoal-black" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("fringe" .
    [0 0 0 0 0 1])
@@ -289,4 +291,6 @@
   ("fpath" .
    [1 0 0 0 0])
   ("-sf" .
-   [1 0 0])))
+   [1 0 0])
+  ("meta" .
+   [1 0 0 0])))
